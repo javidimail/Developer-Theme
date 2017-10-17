@@ -94,24 +94,11 @@
 
                     <script>
                         GitHubCalendar(".calendar", "javidimail");
+                        GitHubActivity.feed({ username: "javidimail", selector: "#feed" });
                     </script>
                 </dev>  
               </section>
-                
-                
-            <section class="ghfeed section">
-                <div class="section-inner">
-                <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
-                <link rel="stylesheet" href="github-activity.min.css">
-
-                <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
-                <script type="text/javascript" src="github-activity.min.js">
-                <div id="feed"></div>
-                <script>    
-                    GitHubActivity.feed({ username: "javidimail", selector: "#feed" });
-                 </script>
-                </dev>  
-              </section>
+          
                     
                <section class="latest section">
                     <div class="section-inner">
@@ -231,24 +218,7 @@
                         </div><!--//content-->  
                     </div><!--//section-inner-->                 
                 </section><!--//section-->
-                <section class="github section">
-                    <div class="section-inner">
-                        <h2 class="heading">My GitHub</h2>
-                        <p>You can embed your GitHub contribution graph calendar using IonicaBizau's <a href="https://github.com/IonicaBizau/github-calendar" target="_blank">GitHub Calendar</a> widget. 
-                        
-                        <div id="github-graph" class="github-graph">
-                            <script>
-                                GitHubCalendar(".calendar", "javidimail");
-                            </script>
-                        </div><!--//github-graph-->
 
-                        <p>You can also embed your GitHub activities using Casey Scarborough's <a href="http://caseyscarborough.com/projects/github-activity/" target="_blank">GitHub Activity Stream</a> widget.        
-                        <!--//Usage: http://caseyscarborough.com/projects/github-activity/ -->                       
-                        <div id="ghfeed" class="ghfeed">
-                        </div><!--//ghfeed-->
-                        
-                    </div><!--//secton-inner-->
-                </section><!--//section-->
             </div><!--//primary-->
             <div class="secondary col-md-4 col-sm-12 col-xs-12">
 
